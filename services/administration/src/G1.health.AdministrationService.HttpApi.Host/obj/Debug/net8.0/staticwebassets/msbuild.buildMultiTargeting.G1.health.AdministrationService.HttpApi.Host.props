@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\G1.health.AdministrationService.HttpApi.Host.props" />
+</Project>

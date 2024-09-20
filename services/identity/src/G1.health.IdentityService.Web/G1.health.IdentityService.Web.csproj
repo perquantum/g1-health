@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>G1.health.IdentityService.Web</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.4" />
+        <PackageReference Include="Volo.Abp.AspNetCore.SignalR" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Identity.Pro.Web" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.OpenIddict.Pro.Web" Version="8.2.1" />
+        <!--<PackageReference Include="Volo.Chat.SignalR" Version="7.3.2" />-->
+        <!--<PackageReference Include="Volo.Chat.Web" Version="7.3.2" />-->
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\G1.health.IdentityService.Application.Contracts\G1.health.IdentityService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.4" />
+    </ItemGroup>
+
+</Project>

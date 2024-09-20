@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1ApFYtpBNsEhS4aU+HvfuACL7Rc3NgBu5iRnY/E/fsA=",
+  "Source": "G1.health.AdministrationService.HttpApi.Host",
+  "BasePath": "_content/G1.health.AdministrationService.HttpApi.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

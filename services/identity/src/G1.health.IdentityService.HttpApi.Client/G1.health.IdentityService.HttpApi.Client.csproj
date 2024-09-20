@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>G1.health.IdentityService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Identity.Pro.HttpApi.Client" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.OpenIddict.Pro.HttpApi.Client" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Admin.HttpApi.Client" Version="8.2.1" />
+        <!--<PackageReference Include="Volo.Chat.HttpApi.Client" Version="7.3.2" />-->
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\G1.health.IdentityService.Application.Contracts\G1.health.IdentityService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

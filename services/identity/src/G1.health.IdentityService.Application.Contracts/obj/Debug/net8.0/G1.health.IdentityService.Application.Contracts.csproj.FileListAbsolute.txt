@@ -1,0 +1,16 @@
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\bin\Debug\net8.0\G1.health.IdentityService.Application.Contracts.deps.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\bin\Debug\net8.0\G1.health.IdentityService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\bin\Debug\net8.0\G1.health.IdentityService.Application.Contracts.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\bin\Debug\net8.0\G1.health.IdentityService.Domain.Shared.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\bin\Debug\net8.0\G1.health.IdentityService.Domain.Shared.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.csproj.AssemblyReference.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.AssemblyInfoInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.AssemblyInfo.cs
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.sourcelink.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.healt.E0342125.Up2Date
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\refint\G1.health.IdentityService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\G1.health.IdentityService.Application.Contracts.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Application.Contracts\obj\Debug\net8.0\ref\G1.health.IdentityService.Application.Contracts.dll

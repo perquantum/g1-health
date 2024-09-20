@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "name": "healthAuthServer",
+  "private": true,
+  "dependencies": {
+    "@volo/abp.aspnetcore.mvc.ui.theme.leptonx": "~3.2.1",
+    "@volo/account": "^8.2.1"
+  }
+}

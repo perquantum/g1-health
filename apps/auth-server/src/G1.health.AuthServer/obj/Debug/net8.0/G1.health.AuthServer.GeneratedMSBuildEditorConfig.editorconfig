@@ -1,0 +1,67 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = G1.health.AuthServer
+build_property.RootNamespace = G1.health.AuthServer
+build_property.ProjectDir = D:\G1 Health WorkSpace\G1.health\G1.health\apps\auth-server\src\G1.health.AuthServer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\G1 Health WorkSpace\G1.health\G1.health\apps\auth-server\src\G1.health.AuthServer
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/DisclaimerModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxEaXNjbGFpbWVyTW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/EmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Account/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxUaGFua1lvdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Themes/LeptonX/Layouts/Account/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGhlbWVzXExlcHRvblhcTGF5b3V0c1xBY2NvdW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Themes/LeptonX/Layouts/Account/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGhlbWVzXExlcHRvblhcTGF5b3V0c1xBY2NvdW50XF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/G1 Health WorkSpace/G1.health/G1.health/apps/auth-server/src/G1.health.AuthServer/Themes/LeptonX/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGhlbWVzXExlcHRvblhcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

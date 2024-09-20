@@ -1,0 +1,16 @@
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\bin\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.deps.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\bin\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\bin\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\bin\Debug\net8.0\G1.health.AdministrationService.Domain.Shared.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\bin\Debug\net8.0\G1.health.AdministrationService.Domain.Shared.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.csproj.AssemblyReference.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.AssemblyInfoInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.AssemblyInfo.cs
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.sourcelink.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.healt.2CE78269.Up2Date
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\refint\G1.health.AdministrationService.Application.Contracts.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\G1.health.AdministrationService.Application.Contracts.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Application.Contracts\obj\Debug\net8.0\ref\G1.health.AdministrationService.Application.Contracts.dll

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>G1.health.AdministrationService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.AuditLogging.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.LanguageManagement.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.TextTemplateManagement.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Gdpr.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.FileManagement.Application.Contracts" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\G1.health.AdministrationService.Domain.Shared\G1.health.AdministrationService.Domain.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

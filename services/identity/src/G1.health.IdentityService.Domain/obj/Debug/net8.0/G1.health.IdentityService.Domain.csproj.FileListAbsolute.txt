@@ -1,0 +1,16 @@
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\bin\Debug\net8.0\G1.health.IdentityService.Domain.deps.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\bin\Debug\net8.0\G1.health.IdentityService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\bin\Debug\net8.0\G1.health.IdentityService.Domain.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\bin\Debug\net8.0\G1.health.IdentityService.Domain.Shared.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\bin\Debug\net8.0\G1.health.IdentityService.Domain.Shared.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.csproj.AssemblyReference.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.AssemblyInfoInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.AssemblyInfo.cs
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.csproj.CoreCompileInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.sourcelink.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.healt.D8506509.Up2Date
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\refint\G1.health.IdentityService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\G1.health.IdentityService.Domain.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\identity\src\G1.health.IdentityService.Domain\obj\Debug\net8.0\ref\G1.health.IdentityService.Domain.dll

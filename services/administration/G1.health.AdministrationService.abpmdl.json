@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "G1.health.AdministrationService.HttpApi": {
+      "path": "src/G1.health.AdministrationService.HttpApi/G1.health.AdministrationService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.Application.Contracts": {
+      "path": "src/G1.health.AdministrationService.Application.Contracts/G1.health.AdministrationService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.Application": {
+      "path": "src/G1.health.AdministrationService.Application/G1.health.AdministrationService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.Domain.Shared": {
+      "path": "src/G1.health.AdministrationService.Domain.Shared/G1.health.AdministrationService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.Domain": {
+      "path": "src/G1.health.AdministrationService.Domain/G1.health.AdministrationService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.EntityFrameworkCore": {
+      "path": "src/G1.health.AdministrationService.EntityFrameworkCore/G1.health.AdministrationService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.HttpApi.Client": {
+      "path": "src/G1.health.AdministrationService.HttpApi.Client/G1.health.AdministrationService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.HttpApi.Host": {
+      "path": "src/G1.health.AdministrationService.HttpApi.Host/G1.health.AdministrationService.HttpApi.Host.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.AdministrationService.TestBase": {
+      "path": "test/G1.health.AdministrationService.TestBase/G1.health.AdministrationService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.AdministrationService.Domain.Tests": {
+      "path": "test/G1.health.AdministrationService.Domain.Tests/G1.health.AdministrationService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.AdministrationService.EntityFrameworkCore.Tests": {
+      "path": "test/G1.health.AdministrationService.EntityFrameworkCore.Tests/G1.health.AdministrationService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.AdministrationService.Application.Tests": {
+      "path": "test/G1.health.AdministrationService.Application.Tests/G1.health.AdministrationService.Application.Tests.abppkg.json",
+      "folder": "test"
+    }
+  }
+}

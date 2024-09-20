@@ -1,0 +1,88 @@
+﻿/* Your Global Styles */
+:root .lpx-theme-dim, :root .lpx-theme-dark {
+    --lpx-logo: url('/images/logo/leptonx/logo-light.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/logo-light-thumbnail.png');
+}
+
+:root .lpx-theme-light {
+    --lpx-logo: url('/images/logo/leptonx/logo-dark.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/logo-dark-thumbnail.png');
+}
+
+:root {
+    --lpx-primary: #E68A41;
+    --lpx-primary-rgb: 230, 139, 65;
+    --lpx-navbar-color: #E0EBB7;
+}
+    /* login page background image and color changes*/
+    :root .lpx-login-bg {
+        background-image: none !important;
+        background-color: #E0EBB7;
+    }
+
+    /* button color changes*/
+    :root .btn-primary {
+        --bs-btn-bg: #E68A41;
+        --bs-btn-hover-bg: #e9781b;
+        --bs-btn-hover-border-color: #e9781b;
+        --bs-btn-border-color: #E68A41;
+        --bs-btn-active-bg: #e9781b;
+        --bs-btn-active-border-color: #e9781b;
+    }
+
+    /* form checked switch and checkbox color changes*/
+    :root .form-switch .form-check-input:checked {
+        border-color: #E68A41 !important;
+        background-color: #E68A41 !important;
+    }
+
+.was-validated .form-control:invalid, .form-control.input-validation-error {
+    border-color: #c00d49;
+    padding-right: calc(1.5em + 1.35rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23c00d49'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23c00d49' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.3375rem) center;
+    background-size: calc(0.75em + 0.675rem) calc(0.75em + 0.675rem);
+}
+
+    .was-validated .form-control:invalid:focus, .form-control.input-validation-error:focus {
+        border-color: #c00d49;
+        box-shadow: 0 0 0 0 rgba(192, 13, 73, 0.25);
+    }
+
+.was-validated textarea.form-control:invalid, textarea.form-control.input-validation-error {
+    padding-right: calc(1.5em + 1.35rem);
+    background-position: top calc(0.375em + 0.3375rem) right calc(0.375em + 0.3375rem);
+}
+
+.was-validated .form-select:invalid, .form-select.input-validation-error {
+    border-color: #c00d49;
+}
+
+    .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.input-validation-error:not([multiple]):not([size]), .form-select.input-validation-error:not([multiple])[size="1"] {
+        padding-right: 6.875rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23c00d49'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23c00d49' stroke='none'/%3e%3c/svg%3e");
+        background-position: right 1.25rem center, center right 3.75rem;
+        background-size: 16px 12px, calc(0.75em + 0.675rem) calc(0.75em + 0.675rem);
+    }
+
+    .was-validated .form-select:invalid:focus, .form-select.input-validation-error:focus {
+        border-color: #c00d49;
+        box-shadow: 0 0 0 0 rgba(192, 13, 73, 0.25);
+    }
+
+.was-validated .form-control-color:invalid, .form-control-color.input-validation-error {
+    width: calc(3rem + calc(1.5em + 1.35rem));
+}
+
+.was-validated .form-check-input:invalid, .form-check-input.input-validation-error {
+    border-color: #c00d49;
+}
+
+    .was-validated .form-check-input:invalid:checked, .form-check-input.input-validation-error:checked {
+        background-color: #c00d49;
+    }
+
+    .was-validated .form-check-input:invalid:focus, .form-check-input.input-validation-error:focus {
+        box-shadow: 0 0 0 0 rgba(192, 13, 73, 0.25);
+    }

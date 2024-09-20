@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9162A507-DB42-424D-8665-E89A28C80CFF}|src\\G1.health.AdministrationService.EntityFrameworkCore\\G1.health.AdministrationService.EntityFrameworkCore.csproj|d:\\g1 health workspace\\g1.health\\g1.health\\services\\administration\\src\\g1.health.administrationservice.entityframeworkcore\\mycustomauthorizationpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162A507-DB42-424D-8665-E89A28C80CFF}|src\\G1.health.AdministrationService.EntityFrameworkCore\\G1.health.AdministrationService.EntityFrameworkCore.csproj|solutionrelative:src\\g1.health.administrationservice.entityframeworkcore\\mycustomauthorizationpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162A507-DB42-424D-8665-E89A28C80CFF}|src\\G1.health.AdministrationService.EntityFrameworkCore\\G1.health.AdministrationService.EntityFrameworkCore.csproj|d:\\g1 health workspace\\g1.health\\g1.health\\services\\administration\\src\\g1.health.administrationservice.entityframeworkcore\\entityframeworkcore\\administrationserviceentityframeworkcoremodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162A507-DB42-424D-8665-E89A28C80CFF}|src\\G1.health.AdministrationService.EntityFrameworkCore\\G1.health.AdministrationService.EntityFrameworkCore.csproj|solutionrelative:src\\g1.health.administrationservice.entityframeworkcore\\entityframeworkcore\\administrationserviceentityframeworkcoremodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1924764005:0:{13143d73-808b-4a2f-bebb-ccbe9c93fe37}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdministrationServiceEntityFrameworkCoreModule.cs",
+              "DocumentMoniker": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.EntityFrameworkCore\\EntityFrameworkCore\\AdministrationServiceEntityFrameworkCoreModule.cs",
+              "RelativeDocumentMoniker": "src\\G1.health.AdministrationService.EntityFrameworkCore\\EntityFrameworkCore\\AdministrationServiceEntityFrameworkCoreModule.cs",
+              "ToolTip": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.EntityFrameworkCore\\EntityFrameworkCore\\AdministrationServiceEntityFrameworkCoreModule.cs",
+              "RelativeToolTip": "src\\G1.health.AdministrationService.EntityFrameworkCore\\EntityFrameworkCore\\AdministrationServiceEntityFrameworkCoreModule.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAADwvzkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T03:53:56.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyCustomAuthorizationPolicyProvider.cs",
+              "DocumentMoniker": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.EntityFrameworkCore\\MyCustomAuthorizationPolicyProvider.cs",
+              "RelativeDocumentMoniker": "src\\G1.health.AdministrationService.EntityFrameworkCore\\MyCustomAuthorizationPolicyProvider.cs",
+              "ToolTip": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.EntityFrameworkCore\\MyCustomAuthorizationPolicyProvider.cs",
+              "RelativeToolTip": "src\\G1.health.AdministrationService.EntityFrameworkCore\\MyCustomAuthorizationPolicyProvider.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T03:53:35.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 587,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

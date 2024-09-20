@@ -1,0 +1,342 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\test\\G1.health.AdministrationService.TestBase\\G1.health.AdministrationService.TestBase.csproj": {}
+  },
+  "projects": {
+    "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\G1.health.AdministrationService.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\G1.health.AdministrationService.Domain.Shared.csproj",
+        "projectName": "G1.health.AdministrationService.Domain.Shared",
+        "projectPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\G1.health.AdministrationService.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.abp.io/38b072fc-680c-446c-9cde-4ccba860d8b8/v3/index.json": {},
+          "https://www.myget.org/F/ais-root/auth/e8335f60-7d20-4186-9a7e-08b6dbd6ad71/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.FileProviders.Embedded": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Volo.Abp.AuditLogging.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.Gdpr.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.LanguageManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.SettingManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.TextTemplateManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.FileManagement.Domain.Shared": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\G1.health.AdministrationService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\G1.health.AdministrationService.Domain.csproj",
+        "projectName": "G1.health.AdministrationService.Domain",
+        "projectPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\G1.health.AdministrationService.Domain.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.abp.io/38b072fc-680c-446c-9cde-4ccba860d8b8/v3/index.json": {},
+          "https://www.myget.org/F/ais-root/auth/e8335f60-7d20-4186-9a7e-08b6dbd6ad71/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\G1.health.AdministrationService.Domain.Shared.csproj": {
+                "projectPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain.Shared\\G1.health.AdministrationService.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Volo.Abp.AuditLogging.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.FeatureManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.Gdpr.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.Identity.Pro.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.LanguageManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.Identity": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.PermissionManagement.Domain.OpenIddict": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.SettingManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.TextTemplateManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.FileManagement.Domain": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\test\\G1.health.AdministrationService.TestBase\\G1.health.AdministrationService.TestBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\test\\G1.health.AdministrationService.TestBase\\G1.health.AdministrationService.TestBase.csproj",
+        "projectName": "G1.health.AdministrationService.TestBase",
+        "projectPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\test\\G1.health.AdministrationService.TestBase\\G1.health.AdministrationService.TestBase.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\test\\G1.health.AdministrationService.TestBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.abp.io/38b072fc-680c-446c-9cde-4ccba860d8b8/v3/index.json": {},
+          "https://www.myget.org/F/ais-root/auth/e8335f60-7d20-4186-9a7e-08b6dbd6ad71/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\G1.health.AdministrationService.Domain.csproj": {
+                "projectPath": "D:\\G1 Health WorkSpace\\G1.health\\G1.health\\services\\administration\\src\\G1.health.AdministrationService.Domain\\G1.health.AdministrationService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.2.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "NSubstitute.Analyzers.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.15, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Volo.Abp.Authorization": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.Autofac": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Volo.Abp.TestBase": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

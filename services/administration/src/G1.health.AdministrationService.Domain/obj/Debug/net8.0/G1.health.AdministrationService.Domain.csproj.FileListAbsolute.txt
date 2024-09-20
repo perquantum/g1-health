@@ -1,0 +1,16 @@
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\bin\Debug\net8.0\G1.health.AdministrationService.Domain.deps.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\bin\Debug\net8.0\G1.health.AdministrationService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\bin\Debug\net8.0\G1.health.AdministrationService.Domain.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\bin\Debug\net8.0\G1.health.AdministrationService.Domain.Shared.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\bin\Debug\net8.0\G1.health.AdministrationService.Domain.Shared.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.csproj.AssemblyReference.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.AssemblyInfoInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.AssemblyInfo.cs
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.csproj.CoreCompileInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.sourcelink.json
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.healt.4F0DEE9B.Up2Date
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\refint\G1.health.AdministrationService.Domain.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\G1.health.AdministrationService.Domain.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\services\administration\src\G1.health.AdministrationService.Domain\obj\Debug\net8.0\ref\G1.health.AdministrationService.Domain.dll

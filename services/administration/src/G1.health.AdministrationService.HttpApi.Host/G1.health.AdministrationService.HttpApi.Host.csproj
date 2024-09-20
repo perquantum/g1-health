@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>G1.health.AdministrationService</RootNamespace>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Identity.Pro.HttpApi.Client" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.Account.Pro.Public.Application.Contracts" Version="8.2.1" />
+        <PackageReference Include="Volo.Abp.OpenIddict.Pro.Domain.Shared" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Localization\G1.health.Shared.Localization.csproj" />
+        <ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Hosting.Microservices\G1.health.Shared.Hosting.Microservices.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\G1.health.AdministrationService.Application\G1.health.AdministrationService.Application.csproj" />
+        <ProjectReference Include="..\G1.health.AdministrationService.EntityFrameworkCore\G1.health.AdministrationService.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\G1.health.AdministrationService.HttpApi\G1.health.AdministrationService.HttpApi.csproj" />
+		<ProjectReference Include="..\..\..\clinic\src\G1.health.ClinicService.Application.Contracts\G1.health.ClinicService.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\appointment\src\G1.health.AppointmentService.Application.Contracts\G1.health.AppointmentService.Application.Contracts.csproj" />		
+		<ProjectReference Include="..\..\..\forms\src\survey.FormsService.Application.Contracts\survey.FormsService.Application.Contracts.csproj" />
+	</ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+</Project>

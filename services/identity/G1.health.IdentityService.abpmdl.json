@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "G1.health.IdentityService.HttpApi": {
+      "path": "src/G1.health.IdentityService.HttpApi/G1.health.IdentityService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.Application": {
+      "path": "src/G1.health.IdentityService.Application/G1.health.IdentityService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.Domain": {
+      "path": "src/G1.health.IdentityService.Domain/G1.health.IdentityService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.Domain.Shared": {
+      "path": "src/G1.health.IdentityService.Domain.Shared/G1.health.IdentityService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.EntityFrameworkCore": {
+      "path": "src/G1.health.IdentityService.EntityFrameworkCore/G1.health.IdentityService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.HttpApi.Client": {
+      "path": "src/G1.health.IdentityService.HttpApi.Client/G1.health.IdentityService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.Application.Contracts": {
+      "path": "src/G1.health.IdentityService.Application.Contracts/G1.health.IdentityService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.HttpApi.Host": {
+      "path": "src/G1.health.IdentityService.HttpApi.Host/G1.health.IdentityService.HttpApi.Host.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.IdentityService.TestBase": {
+      "path": "test/G1.health.IdentityService.TestBase/G1.health.IdentityService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.IdentityService.Domain.Tests": {
+      "path": "test/G1.health.IdentityService.Domain.Tests/G1.health.IdentityService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.IdentityService.EntityFrameworkCore.Tests": {
+      "path": "test/G1.health.IdentityService.EntityFrameworkCore.Tests/G1.health.IdentityService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.IdentityService.Application.Tests": {
+      "path": "test/G1.health.IdentityService.Application.Tests/G1.health.IdentityService.Application.Tests.abppkg.json",
+      "folder": "test"
+    }
+  }
+}

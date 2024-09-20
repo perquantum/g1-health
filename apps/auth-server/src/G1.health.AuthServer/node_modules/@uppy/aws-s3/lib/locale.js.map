@@ -1,0 +1,1 @@
+{"version":3,"names":["strings","timedOut"],"sources":["locale.js"],"sourcesContent":["export default  {\n  strings: {\n    timedOut: 'Upload stalled for %{seconds} seconds, aborting.',\n  },\n}\n"],"mappings":"AAAA,eAAgB;EACdA,OAAO,EAAE;IACPC,QAAQ,EAAE;EACZ;AACF,CAAC"}

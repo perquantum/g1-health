@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "myv3Af1KlxJuY1hVxxBQmOFSKy0Ux3eOHzPeVBbfgXQ=",
+  "Source": "G1.health.IdentityService.HttpApi.Host",
+  "BasePath": "_content/G1.health.IdentityService.HttpApi.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

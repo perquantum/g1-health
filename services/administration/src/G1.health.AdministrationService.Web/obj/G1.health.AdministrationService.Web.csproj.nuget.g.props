@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Lenovo\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\Lenovo\.nuget\packages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.filemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.FileManagement.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.filemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.FileManagement.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.FileManagement.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.FileManagement.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.chat.web\8.2.1\contentFiles\any\net8.0\Volo.Chat.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.chat.web\8.2.1\contentFiles\any\net8.0\Volo.Chat.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Chat.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Chat.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.chat.signalr\8.2.1\contentFiles\any\net8.0\Volo.Chat.SignalR.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.chat.signalr\8.2.1\contentFiles\any\net8.0\Volo.Chat.SignalR.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Chat.SignalR</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Chat.SignalR.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.texttemplatemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.TextTemplateManagement.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.texttemplatemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.TextTemplateManagement.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.TextTemplateManagement.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.TextTemplateManagement.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.languagemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.LanguageManagement.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.languagemanagement.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.LanguageManagement.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.LanguageManagement.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.LanguageManagement.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.gdpr.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.Gdpr.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.gdpr.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.Gdpr.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.Gdpr.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.Gdpr.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.auditlogging.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.AuditLogging.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.auditlogging.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.AuditLogging.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.AuditLogging.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.AuditLogging.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.account.pro.public.web.shared\8.2.1\contentFiles\any\net8.0\Volo.Abp.Account.Pro.Public.Web.Shared.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.account.pro.public.web.shared\8.2.1\contentFiles\any\net8.0\Volo.Abp.Account.Pro.Public.Web.Shared.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.Account.Pro.Public.Web.Shared</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.Account.Pro.Public.Web.Shared.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)volo.abp.account.pro.admin.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.Account.Pro.Admin.Web.abppkg.analyze.json" Condition="Exists('$(NuGetPackageRoot)volo.abp.account.pro.admin.web\8.2.1\contentFiles\any\net8.0\Volo.Abp.Account.Pro.Admin.Web.abppkg.analyze.json')">
+      <NuGetPackageId>Volo.Abp.Account.Pro.Admin.Web</NuGetPackageId>
+      <NuGetPackageVersion>8.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Volo.Abp.Account.Pro.Admin.Web.abppkg.analyze.json</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.fileproviders.embedded\8.0.4\build\netstandard2.0\Microsoft.Extensions.FileProviders.Embedded.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.fileproviders.embedded\8.0.4\build\netstandard2.0\Microsoft.Extensions.FileProviders.Embedded.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Lenovo\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
+  </PropertyGroup>
+</Project>

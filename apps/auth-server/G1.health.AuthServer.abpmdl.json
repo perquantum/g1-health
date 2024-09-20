@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "G1.health.AuthServer": {
+      "path": "src/G1.health.AuthServer/G1.health.AuthServer.abppkg.json",
+      "folder": "src"
+    }
+  }
+}
