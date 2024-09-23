@@ -35,8 +35,6 @@
         <ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Hosting.AspNetCore\G1.health.Shared.Hosting.AspNetCore.csproj" />
         <ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Hosting.Microservices\G1.health.Shared.Hosting.Microservices.csproj" />
         <ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Localization\G1.health.Shared.Localization.csproj" />
-		<ProjectReference Include="..\..\..\..\services\forms\src\survey.FormsService.HttpApi.Client\survey.FormsService.HttpApi.Client.csproj" />
-		<ProjectReference Include="..\..\..\..\services\clinic\src\G1.health.ClinicService.HttpApi.Client\G1.health.ClinicService.HttpApi.Client.csproj" />
 		<ProjectReference Include="..\..\..\..\shared\G1.health.Shared.Utilities\G1.health.Shared.Utilities.csproj" />
 	</ItemGroup>
 

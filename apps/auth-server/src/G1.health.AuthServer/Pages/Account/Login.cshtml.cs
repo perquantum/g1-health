@@ -31,11 +31,9 @@ using G1.health.AuthServer.Web.Pages.Account;
 using Volo.Abp;
 using Volo.Abp.Account;
 using Microsoft.AspNetCore.Http;
-using G1.health.ClinicService.Common;
 using Volo.Abp.AspNetCore.Mvc.MultiTenancy;
 using Microsoft.Extensions.Configuration;
 using Volo.Abp.Authorization.Permissions;
-using G1.health.ClinicService.Permissions;
 
 namespace G1.health.AuthServer.Pages.Account;
 
@@ -96,7 +94,6 @@ public class LoginModel : AccountPageModel
     protected readonly ICurrentPrincipalAccessor CurrentPrincipalAccessor;
     protected readonly IAbpRecaptchaValidatorFactory RecaptchaValidatorFactory;
     protected readonly IAccountExternalProviderAppService AccountExternalProviderAppService;
-    protected readonly ICommonAppService CommonAppService;
     protected readonly IConfiguration Config;
     protected readonly IAbpTenantAppService AbpTenantAppService;
     public readonly IPermissionChecker PermissionsChecker;
@@ -109,7 +106,6 @@ public class LoginModel : AccountPageModel
         ICurrentPrincipalAccessor currentPrincipalAccessor,
         IOptions<IdentityOptions> identityOptions,
         IOptionsSnapshot<reCAPTCHAOptions> reCaptchaOptions,
-        ICommonAppService commonAppService,
         IAbpTenantAppService abpTenantAppService,
         IPermissionChecker permissionsChecker,
         IConfiguration config)
@@ -121,7 +117,6 @@ public class LoginModel : AccountPageModel
         IdentityOptions = identityOptions;
         RecaptchaValidatorFactory = recaptchaValidatorFactory;
         ReCaptchaOptions = reCaptchaOptions;
-        CommonAppService = commonAppService;
         AbpTenantAppService = abpTenantAppService;
         PermissionsChecker = permissionsChecker;
         Config = config;
@@ -593,7 +588,6 @@ public class LoginModel : AccountPageModel
 
         var email = loginInfo.Principal.FindFirstValue(AbpClaimTypes.Email);
         //bool isGranted = await PermissionsChecker.IsGrantedAsync(ClinicServicePermissions.Register.RegisterUser);
-        IsGrantedRegisterPermission = await PermissionsChecker.IsGrantedAsync(ClinicServicePermissions.Registeristration.Register);
         if (email.IsNullOrWhiteSpace())
         {
             return RedirectToPage("./Register", new {

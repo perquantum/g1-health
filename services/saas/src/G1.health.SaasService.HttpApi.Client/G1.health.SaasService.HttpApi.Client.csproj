@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>G1.health.SaasService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Saas.Host.HttpApi.Client" Version="8.2.1" />
+        <PackageReference Include="Volo.Saas.Tenant.HttpApi.Client" Version="8.2.1" />
+        <PackageReference Include="Volo.Payment.Admin.HttpApi.Client" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\G1.health.SaasService.Application.Contracts\G1.health.SaasService.Application.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

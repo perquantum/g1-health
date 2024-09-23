@@ -1,5 +1,4 @@
-﻿using G1.health.ClinicService.ClinicSetup;
-using G1.health.IdentityService.Roles;
+﻿using G1.health.IdentityService.Roles;
 using G1.health.IdentityService.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;

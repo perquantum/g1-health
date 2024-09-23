@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "G1.health.SaasService.HttpApi": {
+      "path": "src/G1.health.SaasService.HttpApi/G1.health.SaasService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.Application.Contracts": {
+      "path": "src/G1.health.SaasService.Application.Contracts/G1.health.SaasService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.Application": {
+      "path": "src/G1.health.SaasService.Application/G1.health.SaasService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.Domain.Shared": {
+      "path": "src/G1.health.SaasService.Domain.Shared/G1.health.SaasService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.Domain": {
+      "path": "src/G1.health.SaasService.Domain/G1.health.SaasService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.EntityFrameworkCore": {
+      "path": "src/G1.health.SaasService.EntityFrameworkCore/G1.health.SaasService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.HttpApi.Client": {
+      "path": "src/G1.health.SaasService.HttpApi.Client/G1.health.SaasService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.HttpApi.Host": {
+      "path": "src/G1.health.SaasService.HttpApi.Host/G1.health.SaasService.HttpApi.Host.abppkg.json",
+      "folder": "src"
+    },
+    "G1.health.SaasService.TestBase": {
+      "path": "test/G1.health.SaasService.TestBase/G1.health.SaasService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.SaasService.Domain.Tests": {
+      "path": "test/G1.health.SaasService.Domain.Tests/G1.health.SaasService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.SaasService.EntityFrameworkCore.Tests": {
+      "path": "test/G1.health.SaasService.EntityFrameworkCore.Tests/G1.health.SaasService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "G1.health.MicroserviceName.Application.Tests": {
+      "path": "test/G1.health.SaasService.Application.Tests/G1.health.SaasService.Application.Tests.abppkg.json",
+      "folder": "test"
+    }
+  }
+}

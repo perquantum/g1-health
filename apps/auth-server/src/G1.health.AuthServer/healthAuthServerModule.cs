@@ -45,10 +45,7 @@ using Microsoft.AspNetCore.Authentication.Facebook;
 using Volo.Abp.Sms.Twilio;
 using Volo.Abp.Sms;
 using Volo.Abp.Http.Client.IdentityModel;
-using G1.health.ClinicService;
-using survey.FormsService;
 using Volo.Abp.OpenIddict.WildcardDomains;
-using Volo.Saas.Host;
 using Volo.Abp.Account.Public.Web.Impersonation;
 using Volo.Abp.Account.Public.Web;
 using Volo.Abp.Identity;
@@ -72,10 +69,7 @@ namespace G1.health.AuthServer;
     typeof(healthSharedLocalizationModule),
     typeof(AbpTwilioSmsModule),
     typeof(AbpSmsModule),
-    typeof(FormsServiceHttpApiClientModule),
     typeof(AbpHttpClientIdentityModelModule),
-    typeof(ClinicServiceHttpApiClientModule),
-    typeof(SaasHostApplicationContractsModule),
     typeof(AbpAccountPublicWebImpersonationModule)
 
 )]
@@ -127,7 +121,7 @@ public class healthAuthServerModule : AbpModule
         {
             //For impersonation in Saas module
             options.TenantAdminUserName = "admin";
-            options.ImpersonationTenantPermission = SaasHostPermissions.Tenants.Impersonation;
+            //options.ImpersonationTenantPermission = SaasHostPermissions.Tenants.Impersonation;
 
             //For impersonation in Identity module
             options.ImpersonationUserPermission = IdentityPermissions.Users.Impersonation;

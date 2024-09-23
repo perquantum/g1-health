@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!--<PackageReference Include="Ocelot" Version="18.0.0" />
+        <PackageReference Include="Ocelot.Provider.Polly" Version="18.0.0" />-->
+		<PackageReference Include="Yarp.ReverseProxy" Version="2.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\G1.health.Shared.Hosting.AspNetCore\G1.health.Shared.Hosting.AspNetCore.csproj" />
+    </ItemGroup>
+
+</Project>

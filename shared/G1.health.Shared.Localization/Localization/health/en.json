@@ -1,0 +1,10 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Login": "Login",
+    "Menu:Dashboard": "Dashboard",
+    "Menu:Tasks": "Tasks",
+    "PleaseSelect":  "Please select"
+  }
+}

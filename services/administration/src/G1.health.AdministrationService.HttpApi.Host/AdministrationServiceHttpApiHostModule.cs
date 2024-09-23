@@ -23,11 +23,7 @@ using Volo.Abp.Localization;
 using Volo.Abp.Modularity;
 using Volo.Abp.OpenIddict;
 using Volo.Abp.PermissionManagement;
-using G1.health.ClinicService;
-using G1.health.AppointmentService;
-using survey.FormsService;
 using Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations;
-using G1.health.ClinicService.Common;
 using Volo.Abp.Security.Claims;
 
 namespace G1.health.AdministrationService;
@@ -43,10 +39,7 @@ namespace G1.health.AdministrationService;
     typeof(AdministrationServiceApplicationModule),
     typeof(AdministrationServiceEntityFrameworkCoreModule),
     typeof(AdministrationServiceHttpApiModule),
-    typeof(AbpOpenIddictProDomainSharedModule),
-    typeof(ClinicServiceApplicationContractsModule),
-    typeof(AppointmentServiceApplicationContractsModule),
-    typeof(FormsServiceApplicationContractsModule)
+    typeof(AbpOpenIddictProDomainSharedModule)
 )]
 public class AdministrationServiceHttpApiHostModule : AbpModule
 {

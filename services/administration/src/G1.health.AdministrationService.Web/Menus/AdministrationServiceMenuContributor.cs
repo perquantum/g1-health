@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using G1.health.AdministrationService.Localization;
 using Volo.Abp.UI.Navigation;
 
 namespace G1.health.AdministrationService.Web.Menus;
@@ -16,7 +15,7 @@ public class AdministrationServiceMenuContributor : IMenuContributor
 
     private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
-        var l = context.GetLocalizer<AdministrationServiceResource>();
+        //var l = context.GetLocalizer<AdministrationServiceResource>();
         return Task.CompletedTask;
     }
 }

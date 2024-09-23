@@ -34,9 +34,6 @@
         <ProjectReference Include="..\G1.health.AdministrationService.Application\G1.health.AdministrationService.Application.csproj" />
         <ProjectReference Include="..\G1.health.AdministrationService.EntityFrameworkCore\G1.health.AdministrationService.EntityFrameworkCore.csproj" />
         <ProjectReference Include="..\G1.health.AdministrationService.HttpApi\G1.health.AdministrationService.HttpApi.csproj" />
-		<ProjectReference Include="..\..\..\clinic\src\G1.health.ClinicService.Application.Contracts\G1.health.ClinicService.Application.Contracts.csproj" />
-		<ProjectReference Include="..\..\..\appointment\src\G1.health.AppointmentService.Application.Contracts\G1.health.AppointmentService.Application.Contracts.csproj" />		
-		<ProjectReference Include="..\..\..\forms\src\survey.FormsService.Application.Contracts\survey.FormsService.Application.Contracts.csproj" />
 	</ItemGroup>
 
     <ItemGroup>

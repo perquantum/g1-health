@@ -1,0 +1,28 @@
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.deps.json
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.csproj.AssemblyReference.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.EmbeddedFilesManifest.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.GeneratedMSBuildEditorConfig.editorconfig
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.AssemblyInfoInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.AssemblyInfo.cs
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.csproj.CoreCompileInputs.cache
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.sourcelink.json
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\refint\G1.health.Shared.Localization.dll
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.pdb
+D:\G1 Health WorkSpace\G1.health\G1.health\shared\G1.health.Shared.Localization\obj\Debug\net8.0\ref\G1.health.Shared.Localization.dll
+D:\ISSUE\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.deps.json
+D:\ISSUE\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.dll
+D:\ISSUE\shared\G1.health.Shared.Localization\bin\Debug\net8.0\G1.health.Shared.Localization.pdb
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.csproj.AssemblyReference.cache
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.EmbeddedFilesManifest.cache
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.GeneratedMSBuildEditorConfig.editorconfig
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.AssemblyInfoInputs.cache
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.AssemblyInfo.cs
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.csproj.CoreCompileInputs.cache
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.sourcelink.json
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.dll
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\refint\G1.health.Shared.Localization.dll
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\G1.health.Shared.Localization.pdb
+D:\ISSUE\shared\G1.health.Shared.Localization\obj\Debug\net8.0\ref\G1.health.Shared.Localization.dll
