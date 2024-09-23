@@ -15,7 +15,9 @@ using Microsoft.AspNetCore.Authentication.Twitter;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using G1.health.AdministrationService.EntityFrameworkCore;
+using G1.health.IdentityService;
 using G1.health.IdentityService.EntityFrameworkCore;
+using G1.health.IdentityService.Users;
 using G1.health.SaasService.EntityFrameworkCore;
 using G1.health.Shared.Hosting.AspNetCore;
 using OpenIddict.Server.AspNetCore;
@@ -50,7 +52,9 @@ using Volo.Abp.Account.Public.Web.Impersonation;
 using Volo.Abp.Account.Public.Web;
 using Volo.Abp.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
 using Volo.Abp.Security.Claims;
+using IdentityUser = Volo.Abp.Identity.IdentityUser;
 
 namespace G1.health.AuthServer;
 
@@ -129,7 +133,7 @@ public class healthAuthServerModule : AbpModule
 
         PreConfigure<IdentityBuilder>(builder =>
         {
-            builder.AddClaimsPrincipalFactory<AbpUserClaimsPrincipalFactory>();
+            builder.AddClaimsPrincipalFactory<MyUserClaimsPrincipalFactory>();
         });
     }
 
@@ -249,6 +253,23 @@ public class healthAuthServerModule : AbpModule
             options.AuthToken = configuration.GetSection("AbpTwilioSms:AuthToken").Value;
             options.FromNumber = configuration.GetSection("AbpTwilioSms:FromNumber").Value;
         });
+
+        context.Services.Replace(ServiceDescriptor.Scoped<UserManager<IdentityUser>, MyIdentityUserManager>());
+        context.Services.Replace(ServiceDescriptor.Scoped<IdentityUserManager, MyIdentityUserManager>());
+
+        context.Services.PostConfigure<AbpClaimsPrincipalFactoryOptions>(options =>
+        {
+            options.DynamicContributors.RemoveAll(x => x == typeof(Volo.Abp.Identity.IdentityDynamicClaimsPrincipalContributor));
+        });
+    }
+
+    public override void OnPreApplicationInitialization(ApplicationInitializationContext context)
+    {
+        var identityUserManager = context.ServiceProvider.GetRequiredService<IdentityUserManager>();
+        var identityUserManager2 = context.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+        var userClaimsPrincipalFactory2 = context.ServiceProvider.GetRequiredService<IUserClaimsPrincipalFactory<IdentityUser>>();
+        var options = context.ServiceProvider.GetRequiredService<IOptions<AbpClaimsPrincipalFactoryOptions>>().Value;
+        base.OnPreApplicationInitialization(context);
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using G1.health.IdentityService.Users;
 using Volo.Abp.Caching;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Identity;
@@ -21,7 +22,7 @@ public class IdentityDynamicClaimsPrincipalContributorCache : ITransientDependen
 
     protected IDistributedCache<AbpDynamicClaimCacheItem> DynamicClaimCache { get; }
     protected ICurrentTenant CurrentTenant { get; }
-    protected Users.IdentityUserManager UserManager { get; }
+    protected MyIdentityUserManager UserManager { get; }
     protected IUserClaimsPrincipalFactory<IdentityUser> UserClaimsPrincipalFactory { get; }
     protected IOptions<AbpClaimsPrincipalFactoryOptions> AbpClaimsPrincipalFactoryOptions { get; }
     protected IOptions<IdentityDynamicClaimsPrincipalContributorCacheOptions> CacheOptions { get; }
@@ -29,7 +30,7 @@ public class IdentityDynamicClaimsPrincipalContributorCache : ITransientDependen
     public IdentityDynamicClaimsPrincipalContributorCache(
         IDistributedCache<AbpDynamicClaimCacheItem> dynamicClaimCache,
         ICurrentTenant currentTenant,
-        Users.IdentityUserManager userManager,
+        MyIdentityUserManager userManager,
         IUserClaimsPrincipalFactory<IdentityUser> userClaimsPrincipalFactory,
         IOptions<AbpClaimsPrincipalFactoryOptions> abpClaimsPrincipalFactoryOptions,
         IOptions<IdentityDynamicClaimsPrincipalContributorCacheOptions> cacheOptions)

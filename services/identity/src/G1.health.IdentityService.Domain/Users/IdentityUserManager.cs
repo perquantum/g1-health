@@ -23,61 +23,32 @@ using Volo.Abp.Uow;
 
 namespace G1.health.IdentityService.Users;
 
-public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
+public class MyIdentityUserManager : IdentityUserManager
 {
-    protected Roles.IIdentityRoleRepository RoleRepository { get; }
     private readonly IServiceProvider _services;
-    protected IIdentityUserRepository UserRepository { get; }
-    protected IOrganizationUnitRepository OrganizationUnitRepository { get; }
-    protected ISettingProvider SettingProvider { get; }
-    protected ICancellationTokenProvider CancellationTokenProvider { get; }
-    protected IDistributedEventBus DistributedEventBus { get; }
-    protected IIdentityLinkUserRepository IdentityLinkUserRepository { get; }
-    protected IDistributedCache<AbpDynamicClaimCacheItem> DynamicClaimCache { get; }
-    protected override CancellationToken CancellationToken => CancellationTokenProvider.Token;
 
-
-    public IdentityUserManager(
+    public MyIdentityUserManager(
         IdentityUserStore store,
-        Roles.IIdentityRoleRepository roleRepository,
-        IIdentityUserRepository userRepository,
+        IIdentityRoleRepository roleRepository,
+        Volo.Abp.Identity.IIdentityUserRepository userRepository,
         IOptions<IdentityOptions> optionsAccessor,
         IPasswordHasher<IdentityUser> passwordHasher,
         IEnumerable<IUserValidator<IdentityUser>> userValidators,
         IEnumerable<IPasswordValidator<IdentityUser>> passwordValidators,
-        ILookupNormalizer keyNormalizer,
-        IdentityErrorDescriber errors,
-        IServiceProvider services,
-        ILogger<IdentityUserManager> logger,
+        ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors,
+        IServiceProvider services, ILogger<IdentityUserManager> logger,
         ICancellationTokenProvider cancellationTokenProvider,
         IOrganizationUnitRepository organizationUnitRepository,
         ISettingProvider settingProvider,
         IDistributedEventBus distributedEventBus,
         IIdentityLinkUserRepository identityLinkUserRepository,
         IDistributedCache<AbpDynamicClaimCacheItem> dynamicClaimCache)
-        : base(
-            store,
-            optionsAccessor,
-            passwordHasher,
-            userValidators,
-            passwordValidators,
-            keyNormalizer,
-            errors,
-            services,
-            logger)
+        : base(store, roleRepository, userRepository, optionsAccessor, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger, cancellationTokenProvider, organizationUnitRepository, settingProvider, distributedEventBus, identityLinkUserRepository, dynamicClaimCache)
     {
-        OrganizationUnitRepository = organizationUnitRepository;
-        SettingProvider = settingProvider;
-        DistributedEventBus = distributedEventBus;
-        RoleRepository = roleRepository;
-        UserRepository = userRepository;
-        IdentityLinkUserRepository = identityLinkUserRepository;
-        DynamicClaimCache = dynamicClaimCache;
-        CancellationTokenProvider = cancellationTokenProvider;
         _services = services;
     }
 
-    public virtual async Task<IdentityResult> CreateAsync(IdentityUser user, string password, bool validatePassword)
+    public override async Task<IdentityResult> CreateAsync(IdentityUser user, string password, bool validatePassword)
     {
         var result = await UpdatePasswordHash(user, password, validatePassword);
         if (!result.Succeeded)
@@ -88,7 +59,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return await CreateAsync(user);
     }
 
-    public async override Task<IdentityResult> DeleteAsync(IdentityUser user)
+    public override async Task<IdentityResult> DeleteAsync(IdentityUser user)
     {
         user.Claims.Clear();
         user.Roles.Clear();
@@ -101,7 +72,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return await base.DeleteAsync(user);
     }
 
-    protected async override Task<IdentityResult> UpdateUserAsync(IdentityUser user)
+    protected override async Task<IdentityResult> UpdateUserAsync(IdentityUser user)
     {
         var result = await base.UpdateUserAsync(user);
 
@@ -113,9 +84,9 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return result;
     }
 
-    public virtual async Task<IdentityUser> GetByIdAsync(Guid id)
+    public override async Task<IdentityUser> GetByIdAsync(Guid id)
     {
-        var user = await UserRepository.FindByIdAsync(id, CancellationToken);
+        var user = await Store.FindByIdAsync(id.ToString(), CancellationToken);
         if (user == null)
         {
             throw new EntityNotFoundException(typeof(IdentityUser), id);
@@ -124,7 +95,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return user;
     }
 
-    public virtual async Task<IdentityResult> SetRolesAsync([NotNull] IdentityUser user,
+    public override async Task<IdentityResult> SetRolesAsync([NotNull] IdentityUser user,
         [NotNull] IEnumerable<string> roleNames)
     {
         Check.NotNull(user, nameof(user));
@@ -147,20 +118,20 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return IdentityResult.Success;
     }
 
-    public virtual async Task<bool> IsInOrganizationUnitAsync(Guid userId, Guid ouId)
+    public override async Task<bool> IsInOrganizationUnitAsync(Guid userId, Guid ouId)
     {
         var user = await UserRepository.GetAsync(userId, cancellationToken: CancellationToken);
         return user.IsInOrganizationUnit(ouId);
     }
 
-    public virtual async Task<bool> IsInOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
+    public override async Task<bool> IsInOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
     {
         await UserRepository.EnsureCollectionLoadedAsync(user, u => u.OrganizationUnits,
             CancellationTokenProvider.Token);
         return user.IsInOrganizationUnit(ou.Id);
     }
 
-    public virtual async Task AddToOrganizationUnitAsync(Guid userId, Guid ouId)
+    public override async Task AddToOrganizationUnitAsync(Guid userId, Guid ouId)
     {
         await AddToOrganizationUnitAsync(
             await UserRepository.GetAsync(userId, cancellationToken: CancellationToken),
@@ -168,7 +139,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         );
     }
 
-    public virtual async Task AddToOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
+    public override async Task AddToOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
     {
         await UserRepository.EnsureCollectionLoadedAsync(user, u => u.OrganizationUnits,
             CancellationTokenProvider.Token);
@@ -186,7 +157,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await DynamicClaimCache.RemoveAsync(AbpDynamicClaimCacheItem.CalculateCacheKey(user.Id, user.TenantId), token: CancellationToken);
     }
 
-    public virtual async Task RemoveFromOrganizationUnitAsync(Guid userId, Guid ouId)
+    public override async Task RemoveFromOrganizationUnitAsync(Guid userId, Guid ouId)
     {
         var user = await UserRepository.GetAsync(userId, cancellationToken: CancellationToken);
         user.RemoveOrganizationUnit(ouId);
@@ -195,7 +166,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await DynamicClaimCache.RemoveAsync(AbpDynamicClaimCacheItem.CalculateCacheKey(user.Id, user.TenantId), token: CancellationToken);
     }
 
-    public virtual async Task RemoveFromOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
+    public override async Task RemoveFromOrganizationUnitAsync(IdentityUser user, OrganizationUnit ou)
     {
         await UserRepository.EnsureCollectionLoadedAsync(user, u => u.OrganizationUnits,
             CancellationTokenProvider.Token);
@@ -204,7 +175,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await UserRepository.UpdateAsync(user, cancellationToken: CancellationToken);
     }
 
-    public virtual async Task SetOrganizationUnitsAsync(Guid userId, params Guid[] organizationUnitIds)
+    public override async Task SetOrganizationUnitsAsync(Guid userId, params Guid[] organizationUnitIds)
     {
         await SetOrganizationUnitsAsync(
             await UserRepository.GetAsync(userId, cancellationToken: CancellationToken),
@@ -212,7 +183,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         );
     }
 
-    public virtual async Task SetOrganizationUnitsAsync(IdentityUser user, params Guid[] organizationUnitIds)
+    public override async Task SetOrganizationUnitsAsync(IdentityUser user, params Guid[] organizationUnitIds)
     {
         Check.NotNull(user, nameof(user));
         Check.NotNull(organizationUnitIds, nameof(organizationUnitIds));
@@ -255,7 +226,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
     }
 
     [UnitOfWork]
-    public virtual async Task<List<OrganizationUnit>> GetOrganizationUnitsAsync(IdentityUser user,
+    public override async Task<List<OrganizationUnit>> GetOrganizationUnitsAsync(IdentityUser user,
         bool includeDetails = false)
     {
         await UserRepository.EnsureCollectionLoadedAsync(user, u => u.OrganizationUnits,
@@ -269,7 +240,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
     }
 
     [UnitOfWork]
-    public virtual async Task<List<IdentityUser>> GetUsersInOrganizationUnitAsync(
+    public override async Task<List<IdentityUser>> GetUsersInOrganizationUnitAsync(
         OrganizationUnit organizationUnit,
         bool includeChildren = false)
     {
@@ -285,7 +256,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         }
     }
 
-    public virtual async Task<IdentityResult> AddDefaultRolesAsync([NotNull] IdentityUser user)
+    public override async Task<IdentityResult> AddDefaultRolesAsync([NotNull] IdentityUser user)
     {
         await UserRepository.EnsureCollectionLoadedAsync(user, u => u.Roles, CancellationToken);
 
@@ -300,7 +271,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return await UpdateUserAsync(user);
     }
 
-    public virtual async Task<bool> ShouldPeriodicallyChangePasswordAsync(IdentityUser user)
+    public override async Task<bool> ShouldPeriodicallyChangePasswordAsync(IdentityUser user)
     {
         Check.NotNull(user, nameof(user));
 
@@ -321,7 +292,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return passwordChangePeriodDays > 0 && lastPasswordChangeTime.AddDays(passwordChangePeriodDays) < DateTime.UtcNow;
     }
 
-    public virtual async Task ResetRecoveryCodesAsync(IdentityUser user)
+    public override async Task ResetRecoveryCodesAsync(IdentityUser user)
     {
         if (!(Store is IdentityUserStore identityUserStore))
         {
@@ -331,7 +302,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await identityUserStore.SetTokenAsync(user, await identityUserStore.GetInternalLoginProviderAsync(), await identityUserStore.GetRecoveryCodeTokenNameAsync(), string.Empty, CancellationToken);
     }
 
-    public async override Task<IdentityResult> SetEmailAsync(IdentityUser user, string email)
+    public override async Task<IdentityResult> SetEmailAsync(IdentityUser user, string email)
     {
         var oldMail = user.Email;
 
@@ -354,7 +325,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return result;
     }
 
-    public async override Task<IdentityResult> SetUserNameAsync(IdentityUser user, string userName)
+    public override async Task<IdentityResult> SetUserNameAsync(IdentityUser user, string userName)
     {
         var oldUserName = user.UserName;
 
@@ -377,7 +348,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return result;
     }
 
-    public virtual async Task UpdateRoleAsync(Guid sourceRoleId, Guid? targetRoleId)
+    public override async Task UpdateRoleAsync(Guid sourceRoleId, Guid? targetRoleId)
     {
         var sourceRole = await RoleRepository.GetAsync(sourceRoleId, cancellationToken: CancellationToken);
 
@@ -396,7 +367,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await UserRepository.UpdateRoleAsync(sourceRoleId, targetRoleId, CancellationToken);
     }
 
-    public virtual async Task UpdateOrganizationAsync(Guid sourceOrganizationId, Guid? targetOrganizationId)
+    public override async Task UpdateOrganizationAsync(Guid sourceOrganizationId, Guid? targetOrganizationId)
     {
         var sourceOrganization = await OrganizationUnitRepository.GetAsync(sourceOrganizationId, cancellationToken: CancellationToken);
 
@@ -415,7 +386,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         await UserRepository.UpdateOrganizationAsync(sourceOrganizationId, targetOrganizationId, CancellationToken);
     }
 
-    public virtual async Task<bool> ValidateUserNameAsync(string userName, Guid? userId = null)
+    public override async Task<bool> ValidateUserNameAsync(string userName, Guid? userId = null)
     {
         if (string.IsNullOrWhiteSpace(userName))
         {
@@ -436,7 +407,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return true;
     }
 
-    public virtual Task<string> GetRandomUserNameAsync(int length)
+    public override Task<string> GetRandomUserNameAsync(int length)
     {
         var allowedUserNameCharacters = Options.User.AllowedUserNameCharacters;
         if (allowedUserNameCharacters.IsNullOrWhiteSpace())
@@ -454,7 +425,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         return Task.FromResult(randomUserName);
     }
 
-    public virtual async Task<string> GetUserNameFromEmailAsync(string email)
+    public override async Task<string> GetUserNameFromEmailAsync(string email)
     {
         const int maxTryCount = 20;
         var tryCount = 0;
@@ -537,7 +508,7 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
         throw new AbpIdentityResultException(IdentityResult.Failed(new IdentityErrorDescriber().InvalidUserName(userName)));
     }
 
-    public async override Task<IdentityUser?> FindByNameAsync(string userName)
+    public override async Task<IdentityUser?> FindByNameAsync(string userName)
     {
         ThrowIfDisposed();
         // ArgumentNullThrowHelper.ThrowIfNull(userName);
@@ -577,12 +548,12 @@ public class IdentityUserManager : UserManager<IdentityUser>, IDomainService
 
     public async Task<IList<string>> GetRoleNamesAsync(IdentityUser user)
     {
-        return await UserRepository.GetRoleNamesAsync(user);
+        return await base.GetRolesAsync(user);
     }
 
     public override async Task<IdentityUser?> FindByIdAsync(string userId)
     {
         ThrowIfDisposed();
-        return await UserRepository.FindByIdAsync(new Guid(userId), CancellationToken);
+        return await base.FindByIdAsync(userId);
     }
 }

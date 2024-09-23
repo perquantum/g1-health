@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using G1.health.IdentityService.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +29,7 @@ public abstract class AccountPageModel : AbpPageModel
 {
     public IAccountAppService AccountAppService { get; set; }
     public SignInManager<IdentityUser> SignInManager { get; set; }
-    public IdentityService.Users.IdentityUserManager UserManager { get; set; }
+    public MyIdentityUserManager UserManager { get; set; }
     public IdentitySecurityLogManager IdentitySecurityLogManager { get; set; }
     public IIdentityLinkUserAppService IdentityLinkUserAppService { get; set; }
     public IOptions<IdentityOptions> IdentityOptions { get; set; }

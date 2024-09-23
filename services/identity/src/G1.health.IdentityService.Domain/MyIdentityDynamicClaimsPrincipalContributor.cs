@@ -11,8 +11,7 @@ using Volo.Abp.Security.Claims;
 
 namespace G1.health.IdentityService;
 
-[Dependency(ReplaceServices = true)]
-public class IdentityDynamicClaimsPrincipalContributor : AbpDynamicClaimsPrincipalContributorBase
+public class MyIdentityDynamicClaimsPrincipalContributor : AbpDynamicClaimsPrincipalContributorBase
 {
     public async override Task ContributeAsync(AbpClaimsPrincipalContributorContext context)
     {
@@ -33,7 +32,7 @@ public class IdentityDynamicClaimsPrincipalContributor : AbpDynamicClaimsPrincip
         {
             // In case if user not found, We force to clear the claims principal.
             context.ClaimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity());
-            var logger = context.GetRequiredService<ILogger<IdentityDynamicClaimsPrincipalContributor>>();
+            var logger = context.GetRequiredService<ILogger<MyIdentityDynamicClaimsPrincipalContributor>>();
             logger.LogWarning(e, $"User not found: {userId.Value}");
             return;
         }

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
+using G1.health.IdentityService.Users;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Data;
 using Volo.Abp.ObjectExtending;
@@ -23,7 +24,7 @@ public class IdentityRoleAppService : IdentityAppServiceBase, IIdentityRoleAppSe
     protected IIdentityRoleRepository RoleRepository { get; }
     protected IIdentityClaimTypeRepository IdentityClaimTypeRepository { get; }
     protected Users.IIdentityUserRepository UserRepository { get; }
-    protected Users.IdentityUserManager UserManager { get; }
+    protected MyIdentityUserManager UserManager { get; }
     protected IIdentityRoleOverrideRepository RoleOverrideRepository { get; }
 
     public IdentityRoleAppService(
@@ -31,7 +32,7 @@ public class IdentityRoleAppService : IdentityAppServiceBase, IIdentityRoleAppSe
         IIdentityRoleRepository roleRepository,
         IIdentityClaimTypeRepository identityClaimTypeRepository,
         Users.IIdentityUserRepository userRepository,
-        Users.IdentityUserManager userManager,
+        MyIdentityUserManager userManager,
         IIdentityRoleOverrideRepository roleOverrideRepository)
     {
         RoleManager = roleManager;

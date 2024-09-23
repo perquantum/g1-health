@@ -20,7 +20,12 @@ using Volo.Abp.Modularity;
 using Microsoft.IdentityModel.Tokens;
 using Volo.Chat;
 using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.Identity;
+using Volo.Abp.Security.Claims;
+using IdentityUser = Volo.Abp.Identity.IdentityUser;
 
 namespace G1.health.IdentityService;
 
@@ -72,6 +77,14 @@ public class IdentityServiceHttpApiHostModule : AbpModule
             });
         });
         ConfigureExternalProviders(context);
+    }
+
+    public override void OnPreApplicationInitialization(ApplicationInitializationContext context)
+    {
+        var identityUserManager = context.ServiceProvider.GetRequiredService<IdentityUserManager>();
+        var identityUserManager2 = context.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+        var options = context.ServiceProvider.GetRequiredService<IOptions<AbpClaimsPrincipalFactoryOptions>>().Value;
+        base.OnPreApplicationInitialization(context);
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)

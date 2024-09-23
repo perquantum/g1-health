@@ -10,20 +10,20 @@ using Volo.Abp.Uow;
 
 namespace G1.health.AuthServer;
 
-public class AbpUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.Identity.IdentityUser, Volo.Abp.Identity.IdentityRole>, ITransientDependency
+public class MyUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.Identity.IdentityUser, Volo.Abp.Identity.IdentityRole>, ITransientDependency
 {
     protected ICurrentPrincipalAccessor CurrentPrincipalAccessor { get; }
     protected IAbpClaimsPrincipalFactory AbpClaimsPrincipalFactory { get; }
-    protected IdentityUserManager IdentityUserManager { get; }
+    protected MyIdentityUserManager IdentityUserManager { get; }
     protected IdentityRoleManager IdentityRoleManager { get; }
 
-    public AbpUserClaimsPrincipalFactory(
+    public MyUserClaimsPrincipalFactory(
         UserManager<Volo.Abp.Identity.IdentityUser> userManager,
         RoleManager<Volo.Abp.Identity.IdentityRole> roleManager,
         IOptions<IdentityOptions> options,
         ICurrentPrincipalAccessor currentPrincipalAccessor,
         IAbpClaimsPrincipalFactory abpClaimsPrincipalFactory,
-        IdentityUserManager identityUserManager,
+        MyIdentityUserManager identityUserManager,
         IdentityRoleManager identityRoleManager)
         : base(
             userManager,
