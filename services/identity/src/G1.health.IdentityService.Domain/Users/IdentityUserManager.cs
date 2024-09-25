@@ -27,6 +27,8 @@ public class MyIdentityUserManager : IdentityUserManager
 {
     private readonly IServiceProvider _services;
 
+    private readonly IIdentityUserRepository _repository;
+
     public MyIdentityUserManager(
         IdentityUserStore store,
         IIdentityRoleRepository roleRepository,
@@ -42,10 +44,11 @@ public class MyIdentityUserManager : IdentityUserManager
         ISettingProvider settingProvider,
         IDistributedEventBus distributedEventBus,
         IIdentityLinkUserRepository identityLinkUserRepository,
-        IDistributedCache<AbpDynamicClaimCacheItem> dynamicClaimCache)
+        IDistributedCache<AbpDynamicClaimCacheItem> dynamicClaimCache, IIdentityUserRepository repository)
         : base(store, roleRepository, userRepository, optionsAccessor, passwordHasher, userValidators, passwordValidators, keyNormalizer, errors, services, logger, cancellationTokenProvider, organizationUnitRepository, settingProvider, distributedEventBus, identityLinkUserRepository, dynamicClaimCache)
     {
         _services = services;
+        _repository = repository;
     }
 
     public override async Task<IdentityResult> CreateAsync(IdentityUser user, string password, bool validatePassword)
@@ -554,6 +557,10 @@ public class MyIdentityUserManager : IdentityUserManager
     public override async Task<IdentityUser?> FindByIdAsync(string userId)
     {
         ThrowIfDisposed();
-        return await base.FindByIdAsync(userId);
+        // original line
+        // return await base.FindByIdAsync(userId);
+
+        // added line
+        return await _repository.FindByIdAsync(new Guid(userId));
     }
 }
