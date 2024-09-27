@@ -551,16 +551,13 @@ public class MyIdentityUserManager : IdentityUserManager
 
     public async Task<IList<string>> GetRoleNamesAsync(IdentityUser user)
     {
-        return await base.GetRolesAsync(user);
+        return await _repository.GetRoleNamesAsync(user);
     }
 
     public override async Task<IdentityUser?> FindByIdAsync(string userId)
     {
         ThrowIfDisposed();
-        // original line
-        // return await base.FindByIdAsync(userId);
-
-        // added line
+        var user = await _repository.FindByIdAsync(new Guid(userId));
         return await _repository.FindByIdAsync(new Guid(userId));
     }
 }

@@ -17,7 +17,7 @@ namespace G1.health.IdentityService;
     typeof(IdentityServiceDomainSharedModule)
 )]
 //[DependsOn(typeof(ChatDomainModule))]
-    public class IdentityServiceDomainModule : AbpModule
+public class IdentityServiceDomainModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

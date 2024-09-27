@@ -11,12 +11,12 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System;
 using Volo.Abp.AspNetCore.Security;
-using Volo.Abp.DependencyInjection;
 using Volo.Abp.OpenIddict.Controllers;
 using Volo.Abp.OpenIddict.ViewModels.Authorization;
 using Volo.Abp.Security.Claims;
 using System.Linq;
 using Volo.Abp.OpenIddict;
+using Volo.Abp.DependencyInjection;
 
 namespace G1.health.AuthServer;
 

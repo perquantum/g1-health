@@ -134,10 +134,10 @@
                     @L["Login"]
                 </abp-button>
             </div>
-            @if (Model.IsSelfRegistrationEnabled && Model.IsGrantedRegisterPermission)
+@*             @if (Model.IsSelfRegistrationEnabled && Model.IsGrantedRegisterPermission)
             {
                 <h5 class="mb-2">@L["NotAMemberYet"] <a class="text-decoration-none" href="@Url.Page("./Register", new {returnUrl = Model.ReturnUrl, returnUrlHash = Model.ReturnUrlHash})">@Model.RegisterText</a></h5>
-            }
+            } *@
 
 
             @if (Model.ShowCancelButton)

@@ -259,6 +259,7 @@ public class healthAuthServerModule : AbpModule
 
         context.Services.PostConfigure<AbpClaimsPrincipalFactoryOptions>(options =>
         {
+            options.DynamicContributors.Clear();
             options.DynamicContributors.RemoveAll(x => x == typeof(Volo.Abp.Identity.IdentityDynamicClaimsPrincipalContributor));
         });
     }

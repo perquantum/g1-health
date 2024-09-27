@@ -22,7 +22,7 @@ using Volo.Abp.Identity;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.Settings;
 using IdentityUser = Volo.Abp.Identity.IdentityUser;
-using IAccountAppService= G1.health.AuthServer.Account.IAccountAppService;
+using IAccountAppService = G1.health.AuthServer.Account.IAccountAppService;
 namespace G1.health.AuthServer.Web.Pages.Account;
 
 public abstract class AccountPageModel : AbpPageModel

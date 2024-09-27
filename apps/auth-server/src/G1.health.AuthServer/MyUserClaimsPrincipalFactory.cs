@@ -2,9 +2,13 @@
 using G1.health.IdentityService.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+using OpenIddict.Abstractions;
+using System.Linq;
 using System.Security.Claims;
+using System.Security.Principal;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
+using Volo.Abp.Identity;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.Uow;
 
@@ -15,7 +19,7 @@ public class MyUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.
     protected ICurrentPrincipalAccessor CurrentPrincipalAccessor { get; }
     protected IAbpClaimsPrincipalFactory AbpClaimsPrincipalFactory { get; }
     protected MyIdentityUserManager IdentityUserManager { get; }
-    protected IdentityRoleManager IdentityRoleManager { get; }
+    protected IdentityService.Roles.IdentityRoleManager IdentityRoleManager { get; }
 
     public MyUserClaimsPrincipalFactory(
         UserManager<Volo.Abp.Identity.IdentityUser> userManager,
@@ -24,7 +28,7 @@ public class MyUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.
         ICurrentPrincipalAccessor currentPrincipalAccessor,
         IAbpClaimsPrincipalFactory abpClaimsPrincipalFactory,
         MyIdentityUserManager identityUserManager,
-        IdentityRoleManager identityRoleManager)
+        IdentityService.Roles.IdentityRoleManager identityRoleManager)
         : base(
             userManager,
             roleManager,
@@ -40,12 +44,21 @@ public class MyUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.
     protected override async Task<ClaimsIdentity> GenerateClaimsAsync(Volo.Abp.Identity.IdentityUser user)
     {
         var id = await base.GenerateClaimsAsync(user).ConfigureAwait(false);
+
+        var existingRoleClaims = id.Claims.Where(x => x.Type == AbpClaimTypes.Role).ToList();
+
+        foreach (var item in existingRoleClaims)
+        {
+            id.RemoveClaim(item);
+        }
+
         if (UserManager.SupportsUserRole)
         {
             var roles = await IdentityUserManager.GetRoleNamesAsync(user).ConfigureAwait(false);
             foreach (var roleName in roles)
             {
                 id.AddClaim(new Claim(Options.ClaimsIdentity.RoleClaimType, roleName));
+
                 if (RoleManager.SupportsRoleClaims)
                 {
                     var role = await IdentityRoleManager.FindByNameAsync(roleName).ConfigureAwait(false);
@@ -56,6 +69,7 @@ public class MyUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<Volo.Abp.
                 }
             }
         }
+        id.AddClaim(new Claim(AbpClaimTypes.TenantId, user.TenantId.ToString()));
         return id;
     }
 }

@@ -80,7 +80,6 @@ public class LoginModel : AccountPageModel
     public string UserNameOrEmailAddress { get; set; }
 
     public string RegisterText { get; set; }
-    public bool IsGrantedRegisterPermission { get; private set; }
 
     //TODO: Why there is an ExternalProviders if only the VisibleExternalProviders is used.
     public IEnumerable<ExternalProviderModel> ExternalProviders { get; set; }
@@ -356,7 +355,8 @@ public class LoginModel : AccountPageModel
             await SignInManager.SignOutAsync();
         }
 
-        return RedirectToPage("./Login", new {
+        return RedirectToPage("./Login", new
+        {
             ReturnUrl = ReturnUrl,
             ReturnUrlHash = ReturnUrlHash,
             LinkUserId = LinkUserId,
@@ -489,7 +489,8 @@ public class LoginModel : AccountPageModel
         if (result.IsLockedOut)
         {
             Logger.LogWarning($"Cannot proceed because user is locked out!");
-            return RedirectToPage("./LockedOut", new {
+            return RedirectToPage("./LockedOut", new
+            {
                 returnUrl = ReturnUrl,
                 returnUrlHash = ReturnUrlHash
             });
@@ -509,7 +510,8 @@ public class LoginModel : AccountPageModel
             if (user.ShouldChangePasswordOnNextLogin || await UserManager.ShouldPeriodicallyChangePasswordAsync(user))
             {
                 await StoreChangePasswordUser(user);
-                return RedirectToPage("./ChangePassword", new {
+                return RedirectToPage("./ChangePassword", new
+                {
                     returnUrl = ReturnUrl,
                     returnUrlHash = ReturnUrlHash
                 });
@@ -518,7 +520,8 @@ public class LoginModel : AccountPageModel
             if (user.IsActive)
             {
                 await StoreConfirmUser(user);
-                return RedirectToPage("./ConfirmUser", new {
+                return RedirectToPage("./ConfirmUser", new
+                {
                     returnUrl = ReturnUrl,
                     returnUrlHash = ReturnUrlHash
                 });
@@ -590,7 +593,8 @@ public class LoginModel : AccountPageModel
         //bool isGranted = await PermissionsChecker.IsGrantedAsync(ClinicServicePermissions.Register.RegisterUser);
         if (email.IsNullOrWhiteSpace())
         {
-            return RedirectToPage("./Register", new {
+            return RedirectToPage("./Register", new
+            {
                 IsExternalLogin = true,
                 ExternalLoginAuthSchema = loginInfo.LoginProvider,
                 ReturnUrl = returnUrl
@@ -615,13 +619,14 @@ public class LoginModel : AccountPageModel
             Logger.LogWarning($"New external user is created but confirmation is required!");
 
             await StoreConfirmUser(externalUser);
-            return RedirectToPage("./ConfirmUser", new {
+            return RedirectToPage("./ConfirmUser", new
+            {
                 returnUrl = ReturnUrl,
                 returnUrlHash = ReturnUrlHash
             });
         }
 
-        await SignInManager.SignInAsync(externalUser, false , loginInfo.LoginProvider);
+        await SignInManager.SignInAsync(externalUser, false, loginInfo.LoginProvider);
 
         if (IsLinkLogin)
         {

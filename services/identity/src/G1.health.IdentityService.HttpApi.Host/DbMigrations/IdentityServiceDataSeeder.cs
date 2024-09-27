@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using G1.health.IdentityService.BackgroundJobs;
+using G1.health.IdentityService.Users;
 using G1.health.Shared.Hosting.Microservices.DbMigrations.Events;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -27,7 +28,7 @@ public class IdentityServiceDataSeeder : ITransientDependency
     protected Roles.IIdentityRoleRepository RoleRepository { get; }
     protected Users.IIdentityUserRepository UserRepository { get; }
     protected ILookupNormalizer LookupNormalizer { get; }
-    protected Users.IdentityUserManager UserManager { get; }
+    protected MyIdentityUserManager UserManager { get; }
     protected Roles.IdentityRoleManager RoleManager { get; }
     protected IOptions<IdentityOptions> IdentityOptions { get; }
     protected RolesAndPermissionsDataSeeder RolesAndPermissionsDataSeeder { get; }
@@ -45,7 +46,7 @@ public class IdentityServiceDataSeeder : ITransientDependency
         Roles.IIdentityRoleRepository roleRepository,
         Users.IIdentityUserRepository userRepository,
         ILookupNormalizer lookupNormalizer,
-        Users.IdentityUserManager userManager,
+        MyIdentityUserManager userManager,
         Roles.IdentityRoleManager roleManagerm,
         IOptions<IdentityOptions> identityOptions,
         RolesAndPermissionsDataSeeder rolesAndPermissionsDataSeeder,
