@@ -6,8 +6,8 @@ namespace G1.health.SaasService;
 
 [DependsOn(
     typeof(SaasServiceDomainSharedModule),
-    typeof(SaasDomainModule),
-    typeof(AbpPaymentDomainModule)
+    typeof(SaasDomainModule)
+    //typeof(AbpPaymentDomainModule)
 )]
 public class SaasServiceDomainModule : AbpModule
 {
