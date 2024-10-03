@@ -3,7 +3,7 @@ using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 using Volo.Saas.Host;
 using Volo.Saas.Tenant;
-using Volo.Payment.Admin;
+//using Volo.Payment.Admin;
 
 namespace G1.health.SaasService.Application;
 
@@ -11,8 +11,8 @@ namespace G1.health.SaasService.Application;
     typeof(SaasServiceApplicationContractsModule),
     typeof(SaasServiceDomainModule),
     typeof(SaasTenantApplicationModule),
-    typeof(SaasHostApplicationModule),
-    typeof(AbpPaymentAdminApplicationModule)
+    typeof(SaasHostApplicationModule)
+    //typeof(AbpPaymentAdminApplicationModule)
 )]
 public class SaasServiceApplicationModule : AbpModule
 {

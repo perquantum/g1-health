@@ -10,7 +10,7 @@
     <ItemGroup>
         <PackageReference Include="Volo.Saas.Host.Application" Version="8.2.1" />
         <PackageReference Include="Volo.Saas.Tenant.Application" Version="8.2.1" />
-        <PackageReference Include="Volo.Payment.Admin.Application" Version="8.2.1" />
+        <!--<PackageReference Include="Volo.Payment.Admin.Application" Version="8.2.1" />-->
     </ItemGroup>
 
     <ItemGroup>

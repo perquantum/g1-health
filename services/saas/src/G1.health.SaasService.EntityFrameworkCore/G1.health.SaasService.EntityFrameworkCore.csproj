@@ -17,7 +17,7 @@
 
     <ItemGroup>
         <PackageReference Include="Volo.Saas.EntityFrameworkCore" Version="8.2.1" />
-        <PackageReference Include="Volo.Payment.EntityFrameworkCore" Version="8.2.1" />
+        <!--<PackageReference Include="Volo.Payment.EntityFrameworkCore" Version="8.2.1" />-->
     </ItemGroup>
 
     <ItemGroup>
